@@ -2,10 +2,19 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <title><?= $title ?? 'Canal do Colaborador' ?></title>
     <link rel="stylesheet" href="/assets/styles/style.css">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/preline@3.2.3/variants.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/shadcn-ui@0.9.5/dist/index.min.js"></script>
+    <title><?= $title ?? 'Canal do Colaborador' ?></title>
 </head>
+<style>
+  [aria-selected="true"] {
+    background: #2a895c;
+    color: #fff;
+  }
+</style>
 <body>
 <header class="bg-[#2a895c] py-8 px-2 flex justify-center items-center">
    <a href="https://herbarium.com.br/">
