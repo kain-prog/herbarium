@@ -1,8 +1,4 @@
-
-<?php
-    $title = 'Herbarium | Canal do Colaborador';
-    require __DIR__ . '/../../components/_head.php';
-?>
+<?php $this->renderPartial('head'); ?>
 
 
 <div class="pt-12 pb-18 max-w-4xl mx-auto px-4 lg:px-8">
@@ -74,13 +70,15 @@
     <div class="pt-12 pb-12 max-w-4xl mx-auto px-4 lg:px-8">
         <div class="px-8 md:px14 border border-2 border-[#2a895c] py-12 rounded-tr-[80px] rounded-bl-[80px]">
             <h2 class="text-zinc-50 font-bold text-4xl text-center mb-8">Importante</h2>
-            <p class="text-center text-zinc-50 font-normal text-lg max-w-3xl mx-auto">Este canal é confidencial e segue a LGPD. Denúncias de má-fé ou acusações sem fundamento podem 
-                prejudicar outras pessoas — use com responsabilidade.</p>
+            <p class="text-center text-zinc-50 font-normal text-lg max-w-3xl mx-auto">
+                Este canal é confidencial e segue a LGPD. Denúncias de má-fé ou acusações sem fundamento podem 
+                prejudicar outras pessoas — use com responsabilidade.
+            </p>
         </div>
     </div>
 
 
 </div>
 
-<?php
-require __DIR__ . '/../../components/_footer.php';
+
+<?php $this->renderPartial('footer'); ?>

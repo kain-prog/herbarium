@@ -1,2 +1,5 @@
 /docker/data
 /docker/logs
+/vendor*
+vendor/
+.env

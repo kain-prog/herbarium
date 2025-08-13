@@ -1,20 +1,7 @@
-<?php
+<?php $this->renderPartial('head'); ?>
 
-$activeTab = $_GET['tab'] ?? 'novo';
-$isConsulta = $activeTab === 'consulta';
+<?php $this->renderPartial('header-colaborador'); ?>
 
-?>
-
-
-<?php
-    $title = 'Herbarium | Canal do Colaborador';
-    require __DIR__ . '/../../components/_head.php';
-?>
-
-
-<?php
-    require __DIR__ . '/../../components/header-colaborador.php';
-?>
 
 <div class="pt-12 pb-18 max-w-4xl mx-auto px-4 lg:px-8">
     
@@ -115,5 +102,4 @@ $isConsulta = $activeTab === 'consulta';
   });
 </script>
 
-<?php
-require __DIR__ . '/../../components/_footer.php';
+<?php $this->renderPartial('footer'); ?>

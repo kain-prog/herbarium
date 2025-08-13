@@ -3,6 +3,8 @@ services:
     image: herbarium
     ports:
       - 8080:80
+    env_file:
+      - .env
     #command: ["php bin/console server:run"]
     volumes:
       - ./:/var/www/html

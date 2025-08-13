@@ -1,27 +1,7 @@
-<?php
+<?php $this->renderPartial('head'); ?>
 
-$_SESSION['atendente'] = false;
+<?php $this->renderPartial('header-atendente'); ?>
 
-session_start();
-
-if (!isset($_SESSION['atendente']) || empty($_SESSION['atendente'])) {
-    header('Location: /');
-    exit;
-}
-
-?>
-
-
-<?php
-    $title = 'Herbarium | Painel do Atendente';
-    require __DIR__ . '/../../components/_head.php';
-?>
-
-
-
-<?php
-    require __DIR__ . '/../../components/header-atendente.php';
-?>
 
 <div class="max-w-5xl mx-auto px-4 lg:px-8">
 
@@ -53,5 +33,5 @@ if (!isset($_SESSION['atendente']) || empty($_SESSION['atendente'])) {
     </div>
 </div>
 
-<?php
-require __DIR__ . '/../../components/_footer.php';
+
+<?php $this->renderPartial('footer'); ?>

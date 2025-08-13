@@ -1,21 +1,14 @@
 <?php
-    session_start();
-    $_SESSION['atendente'] = false;
+    $_SESSION['atendente'] = true;
 
     $protocolo = '123456789-ABC123';
     $created_at = '28 de julho de 2025';
 ?>
 
 
-<?php
-    $title = 'Canal do Colaborador';
-    require __DIR__ . '/../../components/_head.php';
-?>
+<?php $this->renderPartial('head'); ?>
 
-
-<?php
-    require __DIR__ . '/../../components/header-acompanhe.php';
-?>
+<?php $this->renderPartial('header-acompanhe'); ?>
 
 
 <div class="pt-12 pb-18 max-w-5xl mx-auto px-4 lg:px-8">
@@ -102,5 +95,4 @@
 
 </div>
 
-<?php
-require __DIR__ . '/../../components/_footer.php';
+<?php $this->renderPartial('header-footer'); ?>
