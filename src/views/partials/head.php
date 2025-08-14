@@ -7,7 +7,16 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/preline@3.2.3/variants.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/shadcn-ui@0.9.5/dist/index.min.js"></script>
-    <title><?= $title ?? 'Canal do Colaborador' ?></title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+
+  <style>
+    /* Suaviza a transição do foco dos inputs */
+    .focus-soft:focus {
+      box-shadow: 0 0 0 4px rgba(107, 193, 106, 0.20);
+      outline: none;
+    }
+  </style>
+    <title><?= $title ? $title : 'Herbarium | Canal do Colaborador' ?></title>
 </head>
 <style>
   [aria-selected="true"] {

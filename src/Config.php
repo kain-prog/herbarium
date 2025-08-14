@@ -2,6 +2,7 @@
 
 namespace src;
 
+setlocale(LC_TIME, 'pt_BR.UTF-8', 'pt_BR', 'Portuguese_Brazil.1252');
 date_default_timezone_set('America/Sao_Paulo');
 
 class Config
